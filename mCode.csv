@@ -1,0 +1,5 @@
+instruct,result,type1,s1,value1,type2,s2,value2,s3,value3
+TOMAIN,NULL,NULL,NULL,0,NULL,NULL,0,,0
+MSP,,NULL,,0,NULL,,0,,0
+PSTR,NULL,STRING,,0,NULL,NULL,0,,0
+PN,NULL,NULL,NULL,0,NULL,NULL,0,,0

@@ -1,0 +1,19 @@
+.data
+    str0: .asciiz "Hello, world!"
+    strn: .asciiz "\n"
+.text
+# TOMAIN s1: NULL || result: NULL || func: NULL
+    j main
+# MSP s1:  || result:  || func: main
+main:
+    addiu $sp, $sp, -0
+    move $t3, $sp
+# PSTR s1:  || result: NULL || func: main
+    li $v0, 4
+    la $a0, str0
+    syscall
+# PN s1: NULL || result: NULL || func: main
+    li $v0, 4
+    la $a0, strn
+    syscall
+main_endof: 
